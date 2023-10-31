@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "next_generations",
+  "info": {
+    "singularName": "next-generation",
+    "pluralName": "next-generations",
+    "displayName": "Next generation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Caption": {
+      "type": "string"
+    },
+    "Heading": {
+      "type": "string",
+      "required": false
+    },
+    "Description": {
+      "type": "blocks"
+    }
+  }
+}

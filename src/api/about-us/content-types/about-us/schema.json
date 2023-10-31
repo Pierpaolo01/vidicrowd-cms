@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "About us",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Caption": {
+      "type": "string"
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Summary": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

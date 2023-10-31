@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_features",
+  "info": {
+    "singularName": "section-feature",
+    "pluralName": "section-features",
+    "displayName": "Section feature"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Subheading": {
+      "type": "string"
+    },
+    "features": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::feature.feature"
+    }
+  }
+}

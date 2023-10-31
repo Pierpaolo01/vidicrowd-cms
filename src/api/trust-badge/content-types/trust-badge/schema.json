@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trust_badges",
+  "info": {
+    "singularName": "trust-badge",
+    "pluralName": "trust-badges",
+    "displayName": "Trust badge",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text"
+    },
+    "Icon": {
+      "type": "string"
+    }
+  }
+}

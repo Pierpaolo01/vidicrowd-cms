@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "vc_medias",
+  "info": {
+    "singularName": "vc-media",
+    "pluralName": "vc-medias",
+    "displayName": "VC media",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Caption": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Summary": {
+      "type": "blocks"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Media": {
+      "type": "string"
+    }
+  }
+}
