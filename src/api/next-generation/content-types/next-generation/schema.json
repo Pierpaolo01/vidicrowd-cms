@@ -12,15 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Caption": {
+    "caption": {
       "type": "string"
     },
-    "Heading": {
+    "heading": {
       "type": "string",
-      "required": false
+      "required": true
     },
-    "Description": {
-      "type": "blocks"
+    "description": {
+      "type": "blocks",
+      "required": true
     }
   }
 }

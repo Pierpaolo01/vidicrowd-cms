@@ -12,20 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Caption": {
+    "caption": {
       "type": "string"
     },
-    "Heaing": {
+    "heaing": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "link": {
       "type": "string"
     },
-    "Description": {
-      "type": "blocks"
-    },
-    "Link": {
-      "type": "string"
-    },
-    "Summary": {
-      "type": "blocks"
+    "summary": {
+      "type": "blocks",
+      "required": true
     }
   }
 }

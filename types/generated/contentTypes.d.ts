@@ -689,10 +689,10 @@ export interface ApiAboutUsAboutUs extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    Caption: Attribute.String;
-    Heading: Attribute.String;
-    Description: Attribute.Blocks;
-    Summary: Attribute.Blocks & Attribute.Required;
+    caption: Attribute.String;
+    heading: Attribute.String & Attribute.Required;
+    description: Attribute.Blocks & Attribute.Required;
+    summary: Attribute.Blocks & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -717,15 +717,16 @@ export interface ApiFeatureFeature extends Schema.CollectionType {
     singularName: 'feature';
     pluralName: 'features';
     displayName: 'Feature';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
-    Summary: Attribute.Text & Attribute.Required & Attribute.Unique;
-    Description: Attribute.Blocks;
-    Media: Attribute.String;
+    summary: Attribute.Text & Attribute.Required & Attribute.Unique;
+    description: Attribute.Blocks & Attribute.Required;
+    media: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -756,9 +757,9 @@ export interface ApiNextGenerationNextGeneration extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    Caption: Attribute.String;
-    Heading: Attribute.String;
-    Description: Attribute.Blocks;
+    caption: Attribute.String;
+    heading: Attribute.String & Attribute.Required;
+    description: Attribute.Blocks & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -789,11 +790,11 @@ export interface ApiOurMissionOurMission extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    Caption: Attribute.String;
-    Heaing: Attribute.String;
-    Description: Attribute.Blocks;
-    Link: Attribute.String;
-    Summary: Attribute.Blocks;
+    caption: Attribute.String;
+    heaing: Attribute.String & Attribute.Required;
+    description: Attribute.Blocks & Attribute.Required;
+    link: Attribute.String;
+    summary: Attribute.Blocks & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -818,15 +819,16 @@ export interface ApiProductProduct extends Schema.CollectionType {
     singularName: 'product';
     pluralName: 'products';
     displayName: 'Product';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Name: Attribute.String & Attribute.Required & Attribute.Unique;
-    Summary: Attribute.Blocks;
-    Description: Attribute.Blocks;
-    Media: Attribute.String;
+    name: Attribute.String & Attribute.Required & Attribute.Unique;
+    summary: Attribute.Blocks & Attribute.Required;
+    description: Attribute.Blocks & Attribute.Required;
+    media: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -851,13 +853,14 @@ export interface ApiSectionFeatureSectionFeature extends Schema.SingleType {
     singularName: 'section-feature';
     pluralName: 'section-features';
     displayName: 'Section feature';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Heading: Attribute.String;
-    Subheading: Attribute.String;
+    heading: Attribute.String & Attribute.Required;
+    subheading: Attribute.String;
     features: Attribute.Relation<
       'api::section-feature.section-feature',
       'oneToMany',
@@ -887,13 +890,14 @@ export interface ApiSectionProductSectionProduct extends Schema.SingleType {
     singularName: 'section-product';
     pluralName: 'section-products';
     displayName: 'Section product';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Heading: Attribute.String;
-    Subheading: Attribute.String;
+    heading: Attribute.String & Attribute.Required;
+    subheading: Attribute.String;
     products: Attribute.Relation<
       'api::section-product.section-product',
       'oneToMany',
@@ -929,9 +933,9 @@ export interface ApiTrustBadgeTrustBadge extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Heading: Attribute.String;
-    Text: Attribute.Text;
-    Icon: Attribute.String;
+    name: Attribute.String & Attribute.Required;
+    description: Attribute.Text & Attribute.Required;
+    icon: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -962,11 +966,11 @@ export interface ApiVcMediaVcMedia extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    Caption: Attribute.String;
-    Title: Attribute.String;
-    Summary: Attribute.Blocks;
-    Description: Attribute.Blocks;
-    Media: Attribute.String;
+    caption: Attribute.String;
+    heading: Attribute.String & Attribute.Required;
+    summary: Attribute.Blocks & Attribute.Required;
+    description: Attribute.Blocks & Attribute.Required;
+    media: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

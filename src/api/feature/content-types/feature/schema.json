@@ -4,7 +4,8 @@
   "info": {
     "singularName": "feature",
     "pluralName": "features",
-    "displayName": "Feature"
+    "displayName": "Feature",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,15 +17,16 @@
       "required": true,
       "unique": true
     },
-    "Summary": {
+    "summary": {
       "type": "text",
       "required": true,
       "unique": true
     },
-    "Description": {
-      "type": "blocks"
+    "description": {
+      "type": "blocks",
+      "required": true
     },
-    "Media": {
+    "media": {
       "type": "string"
     }
   }

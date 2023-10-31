@@ -12,16 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Caption": {
-      "type": "string"
+    "caption": {
+      "type": "string",
+      "required": false
     },
-    "Heading": {
-      "type": "string"
+    "heading": {
+      "type": "string",
+      "required": true
     },
-    "Description": {
-      "type": "blocks"
+    "description": {
+      "type": "blocks",
+      "required": true
     },
-    "Summary": {
+    "summary": {
       "type": "blocks",
       "required": true
     }

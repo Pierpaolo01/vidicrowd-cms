@@ -4,25 +4,28 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product"
+    "displayName": "Product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Summary": {
-      "type": "blocks"
+    "summary": {
+      "type": "blocks",
+      "required": true
     },
-    "Description": {
-      "type": "blocks"
+    "description": {
+      "type": "blocks",
+      "required": true
     },
-    "Media": {
+    "media": {
       "type": "string"
     }
   }
