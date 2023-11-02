@@ -23,9 +23,6 @@
     "summary": {
       "type": "richtext",
       "required": true
-    },
-    "description": {
-      "type": "richtext"
     }
   }
 }

@@ -20,12 +20,9 @@
     "media": {
       "type": "string"
     },
-    "description": {
+    "summary": {
       "type": "richtext",
       "required": true
-    },
-    "summary": {
-      "type": "richtext"
     }
   }
 }

@@ -692,7 +692,6 @@ export interface ApiAboutUsAboutUs extends Schema.SingleType {
     caption: Attribute.String;
     heading: Attribute.String & Attribute.Required;
     summary: Attribute.RichText & Attribute.Required;
-    description: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -759,7 +758,7 @@ export interface ApiNextGenerationNextGeneration extends Schema.SingleType {
   attributes: {
     caption: Attribute.String;
     heading: Attribute.String & Attribute.Required;
-    description: Attribute.RichText & Attribute.Required;
+    summary: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -791,10 +790,8 @@ export interface ApiOurMissionOurMission extends Schema.SingleType {
   };
   attributes: {
     caption: Attribute.String;
-    heaing: Attribute.String & Attribute.Required;
-    link: Attribute.String;
-    description: Attribute.RichText & Attribute.Required;
-    summary: Attribute.RichText;
+    heading: Attribute.String & Attribute.Required;
+    summary: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -827,8 +824,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
     media: Attribute.String;
-    description: Attribute.RichText & Attribute.Required;
-    summary: Attribute.RichText;
+    summary: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -966,11 +962,9 @@ export interface ApiVcMediaVcMedia extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    caption: Attribute.String;
+    caption: Attribute.String & Attribute.DefaultTo<'Media'>;
     heading: Attribute.String & Attribute.Required;
-    media: Attribute.String;
     summary: Attribute.RichText & Attribute.Required;
-    description: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

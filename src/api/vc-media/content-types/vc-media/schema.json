@@ -14,20 +14,14 @@
   "attributes": {
     "caption": {
       "type": "string",
-      "required": false
+      "required": false,
+      "default": "Media"
     },
     "heading": {
       "type": "string",
       "required": true
     },
-    "media": {
-      "type": "string"
-    },
     "summary": {
-      "type": "richtext",
-      "required": true
-    },
-    "description": {
       "type": "richtext",
       "required": true
     }

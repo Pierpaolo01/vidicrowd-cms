@@ -13,21 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "caption": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
-    "heaing": {
+    "heading": {
       "type": "string",
       "required": true
     },
-    "link": {
-      "type": "string"
-    },
-    "description": {
+    "summary": {
       "type": "richtext",
       "required": true
-    },
-    "summary": {
-      "type": "richtext"
     }
   }
 }
