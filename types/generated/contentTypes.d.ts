@@ -691,8 +691,8 @@ export interface ApiAboutUsAboutUs extends Schema.SingleType {
   attributes: {
     caption: Attribute.String;
     heading: Attribute.String & Attribute.Required;
-    description: Attribute.Blocks & Attribute.Required;
-    summary: Attribute.Blocks & Attribute.Required;
+    summary: Attribute.RichText & Attribute.Required;
+    description: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -725,8 +725,8 @@ export interface ApiFeatureFeature extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
     summary: Attribute.Text & Attribute.Required & Attribute.Unique;
-    description: Attribute.Blocks & Attribute.Required;
     media: Attribute.String;
+    description: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -759,7 +759,7 @@ export interface ApiNextGenerationNextGeneration extends Schema.SingleType {
   attributes: {
     caption: Attribute.String;
     heading: Attribute.String & Attribute.Required;
-    description: Attribute.Blocks & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -792,9 +792,9 @@ export interface ApiOurMissionOurMission extends Schema.SingleType {
   attributes: {
     caption: Attribute.String;
     heaing: Attribute.String & Attribute.Required;
-    description: Attribute.Blocks & Attribute.Required;
     link: Attribute.String;
-    summary: Attribute.Blocks & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
+    summary: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -826,9 +826,9 @@ export interface ApiProductProduct extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
-    summary: Attribute.Blocks & Attribute.Required;
-    description: Attribute.Blocks & Attribute.Required;
     media: Attribute.String;
+    description: Attribute.RichText & Attribute.Required;
+    summary: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -968,9 +968,9 @@ export interface ApiVcMediaVcMedia extends Schema.SingleType {
   attributes: {
     caption: Attribute.String;
     heading: Attribute.String & Attribute.Required;
-    summary: Attribute.Blocks & Attribute.Required;
-    description: Attribute.Blocks & Attribute.Required;
     media: Attribute.String;
+    summary: Attribute.RichText & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

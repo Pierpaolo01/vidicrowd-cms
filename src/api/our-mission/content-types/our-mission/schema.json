@@ -19,16 +19,15 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "blocks",
-      "required": true
-    },
     "link": {
       "type": "string"
     },
-    "summary": {
-      "type": "blocks",
+    "description": {
+      "type": "richtext",
       "required": true
+    },
+    "summary": {
+      "type": "richtext"
     }
   }
 }

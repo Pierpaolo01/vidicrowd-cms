@@ -22,12 +22,12 @@
       "required": true,
       "unique": true
     },
-    "description": {
-      "type": "blocks",
-      "required": true
-    },
     "media": {
       "type": "string"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
     }
   }
 }

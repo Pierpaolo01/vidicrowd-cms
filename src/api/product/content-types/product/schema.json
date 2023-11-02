@@ -17,16 +17,15 @@
       "required": true,
       "unique": true
     },
-    "summary": {
-      "type": "blocks",
-      "required": true
-    },
-    "description": {
-      "type": "blocks",
-      "required": true
-    },
     "media": {
       "type": "string"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "summary": {
+      "type": "richtext"
     }
   }
 }

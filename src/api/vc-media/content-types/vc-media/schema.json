@@ -20,16 +20,16 @@
       "type": "string",
       "required": true
     },
+    "media": {
+      "type": "string"
+    },
     "summary": {
-      "type": "blocks",
+      "type": "richtext",
       "required": true
     },
     "description": {
-      "type": "blocks",
+      "type": "richtext",
       "required": true
-    },
-    "media": {
-      "type": "string"
     }
   }
 }

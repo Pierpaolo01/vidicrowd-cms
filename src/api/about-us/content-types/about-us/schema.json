@@ -20,13 +20,12 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "blocks",
+    "summary": {
+      "type": "richtext",
       "required": true
     },
-    "summary": {
-      "type": "blocks",
-      "required": true
+    "description": {
+      "type": "richtext"
     }
   }
 }
