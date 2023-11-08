@@ -22,12 +22,30 @@
       "required": true,
       "unique": true
     },
-    "media": {
-      "type": "string"
-    },
     "description": {
       "type": "richtext",
       "required": true
+    },
+    "feature_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "feature_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

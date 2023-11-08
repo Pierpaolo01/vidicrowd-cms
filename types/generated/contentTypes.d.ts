@@ -724,8 +724,9 @@ export interface ApiFeatureFeature extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
     summary: Attribute.Text & Attribute.Required & Attribute.Unique;
-    media: Attribute.String;
     description: Attribute.RichText & Attribute.Required;
+    feature_logo: Attribute.Media;
+    feature_image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -823,8 +824,9 @@ export interface ApiProductProduct extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
-    media: Attribute.String;
     summary: Attribute.RichText & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
+    image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
