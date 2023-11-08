@@ -725,8 +725,8 @@ export interface ApiFeatureFeature extends Schema.CollectionType {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
     summary: Attribute.Text & Attribute.Required & Attribute.Unique;
     description: Attribute.RichText & Attribute.Required;
-    feature_logo: Attribute.Media;
-    feature_image: Attribute.Media;
+    logo: Attribute.Media;
+    image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -967,6 +967,7 @@ export interface ApiVcMediaVcMedia extends Schema.SingleType {
     caption: Attribute.String & Attribute.DefaultTo<'Media'>;
     heading: Attribute.String & Attribute.Required;
     summary: Attribute.RichText & Attribute.Required;
+    logo: Attribute.Media & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
