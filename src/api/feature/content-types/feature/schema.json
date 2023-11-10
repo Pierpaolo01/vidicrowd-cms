@@ -47,6 +47,9 @@
         "videos",
         "audios"
       ]
+    },
+    "description_page": {
+      "type": "richtext"
     }
   }
 }

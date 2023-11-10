@@ -727,6 +727,7 @@ export interface ApiFeatureFeature extends Schema.CollectionType {
     description: Attribute.RichText & Attribute.Required;
     logo: Attribute.Media;
     image: Attribute.Media;
+    description_page: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
