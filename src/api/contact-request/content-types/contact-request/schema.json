@@ -4,10 +4,11 @@
   "info": {
     "singularName": "contact-request",
     "pluralName": "contact-requests",
-    "displayName": "Contact request"
+    "displayName": "Contact request",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

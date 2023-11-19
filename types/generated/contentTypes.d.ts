@@ -686,7 +686,7 @@ export interface ApiAboutUsAboutUs extends Schema.SingleType {
     description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     caption: Attribute.String;
@@ -694,7 +694,6 @@ export interface ApiAboutUsAboutUs extends Schema.SingleType {
     summary: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::about-us.about-us',
       'oneToOne',
@@ -716,9 +715,10 @@ export interface ApiContactRequestContactRequest extends Schema.CollectionType {
     singularName: 'contact-request';
     pluralName: 'contact-requests';
     displayName: 'Contact request';
+    description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     name: Attribute.Text;
@@ -726,7 +726,6 @@ export interface ApiContactRequestContactRequest extends Schema.CollectionType {
     description: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::contact-request.contact-request',
       'oneToOne',
