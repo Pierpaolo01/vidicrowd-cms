@@ -710,6 +710,38 @@ export interface ApiAboutUsAboutUs extends Schema.SingleType {
   };
 }
 
+export interface ApiContactRequestContactRequest extends Schema.CollectionType {
+  collectionName: 'contact_requests';
+  info: {
+    singularName: 'contact-request';
+    pluralName: 'contact-requests';
+    displayName: 'Contact request';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.Text;
+    email: Attribute.Email & Attribute.Required;
+    description: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::contact-request.contact-request',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::contact-request.contact-request',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiFeatureFeature extends Schema.CollectionType {
   collectionName: 'features';
   info: {
@@ -1004,6 +1036,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::about-us.about-us': ApiAboutUsAboutUs;
+      'api::contact-request.contact-request': ApiContactRequestContactRequest;
       'api::feature.feature': ApiFeatureFeature;
       'api::next-generation.next-generation': ApiNextGenerationNextGeneration;
       'api::our-mission.our-mission': ApiOurMissionOurMission;
